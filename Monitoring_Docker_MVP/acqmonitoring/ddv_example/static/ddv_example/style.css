@@ -1,0 +1,11 @@
+td.color  {
+    color: red;
+}
+
+text.text-primary {
+    color: black;
+}
+
+td, th {
+  width: 200px;
+}

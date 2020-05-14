@@ -1,0 +1,43 @@
+{% extends "base2.html" %}
+
+{% block body %}
+
+
+
+<div class="card">
+  <div class="card-header">
+    <h4 class="card-title"> Company Transactions </h4>
+  </div>
+  <div class="card-body">
+    <div class="table-responsive">
+      <table class="table" style="font-weight: 400; color: black">
+        <thead class="text-primary" style="color: black">
+            <tr>
+              <th>random_name</th>
+              <th>random_amount</th>
+              <th>date</th>
+              <th>type</th>
+              <th>random_id_code</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for tehing in kirje %}
+        {% ifequal forloop.counter0|divisibleby:"2" True %}
+          <tr style="background-color:Lavender;">
+            {% else %}
+            <tr>
+            {% endifequal %}
+            <td>{{ tehing.random_name }}</td>
+            <td>{{ tehing.random_amount }}</td>
+            <td>{{ tehing.date }}</td>
+            <td>{{ tehing.type }}</td>
+            <td>{{ tehing.random_id_code }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% load i18n staticfiles %}
+
+{% block extra_head %}
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.12/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.12/js/jquery.dataTables.js"></script>
+    <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+    <script src="{% static "ddv_example/ddv_example_testmodel.js" %}"></script>
+    <script type="text/javascript">
+        var TESTMODEL_LIST_JSON_URL = '{% url "testmodel_list_json" %}';
+        // translations for datatables
+
+        var dt_language = {
+            "emptyTable":     "{% trans "No data available in table" %}",
+            "info":           "{% trans "Showing _START_ to _END_ of _TOTAL_ entries" %}",
+            "infoEmpty":      "{% trans "Showing 0 to 0 of 0 entries" %}",
+            "infoFiltered":   "{% trans "(filtered from _MAX_ total entries)" %}",
+            "infoPostFix":    "",
+            "thousands":      ",",
+            "lengthMenu":     "{% trans "Show _MENU_ entries" %}",
+            "loadingRecords": "{% trans "Loading..." %}",
+            "processing":     "{% trans "Processing..." %}",
+            "search":         "{% trans "Search:" %}",
+            "zeroRecords":    "{% trans "No matching records found" %}",
+            "paginate": {
+                "first":      "{% trans "First" %}",
+                "last":       "{% trans "Last" %}",
+                "next":       "{% trans "Next" %}",
+                "previous":   "{% trans "Previous" %}"
+            },
+            "aria": {
+                "sortAscending":  "{% trans ": activate to sort column ascending" %}",
+                "sortDescending": "{% trans ": activate to sort column descending" %}"
+            }
+        }
+    </script>
+{% endblock %}
+
+{% block content %}
+    <table id="tbl_koond" class="stripe">
+        <thead>
+            <th>{% trans "year" %}</th>
+            <th>{% trans "month" %}</th>
+            <th>{% trans "random_id_code" %}</th>
+            <th>{% trans "type" %}</th>
+            <th>{% trans "random_name" %}</th>
+            <th>{% trans "random_amount" %}</th>
+            <th>{% trans "random_count" %}</th>
+            <th>{% trans "random_percent" %}</th>
+            <th>{% trans "rule_1" %}</th>
+            <th>{% trans "rule_2" %}</th>
+            <th>{% trans "rule_3" %}</th>
+            <th>{% trans "rule_4" %}</th>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+{% endblock %}
