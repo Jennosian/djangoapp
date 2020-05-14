@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b3da5d9b-1f6f-4a52-a9d7-c1bcb74c6fdf" name="Default" comment="" />
+    <list default="true" id="b3da5d9b-1f6f-4a52-a9d7-c1bcb74c6fdf" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/acqmonitoring/ddv_example/static/ddv_example/img/card.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/acqmonitoring/ddv_example/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/acqmonitoring/ddv_example/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/acqmonitoring/ddv_example/templates/base2.html" beforeDir="false" afterPath="$PROJECT_DIR$/acqmonitoring/ddv_example/templates/base2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +71,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -253,6 +259,17 @@
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.js" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="2660" y="276" key="FileChooserDialogImpl" timestamp="1579179290212">
